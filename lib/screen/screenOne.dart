@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutterapp/screen/screenTwo.dart';
+//import 'package:flutterapp/screen/screenTwo.dart';
 
 class ScreenSatu extends StatelessWidget {
   @override

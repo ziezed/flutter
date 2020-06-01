@@ -1,11 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutterapp/appbar/AppBar1.dart';
-import 'package:flutterapp/list/listStateLess.dart';
-import 'package:flutterapp/screen/screenOne.dart';
-import 'package:flutterapp/screen/screenTree.dart';
-import 'package:flutterapp/screen/screenTwo.dart';
-
-import 'list/testList.dart';
+//import 'package:flutterapp/screen/screenOne.dart';
+//import 'package:flutterapp/screen/screenTree.dart';
+//import 'package:flutterapp/screen/screenTwo.dart';
+import 'package:flutterapp/urusanMap/lokasiSekarang.dart';
 //import 'package:flutterapp/lessFull/statfull.dart';
 //import 'package:flutterapp/lessFull/wijet.dart';
 //import 'package:flutterapp/list/listStateLess.dart';
@@ -29,14 +26,14 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.deepOrange,
       ),
-//      home: AppBar1(),
+      home: LokasiSekarang(),
         //ini bagian route
-      initialRoute: '/',
-      routes: {
-        '/': (context) => ScreenSatu(),
-        '/dua': (context) => ScreenDua(),
-        '/tiga': (context) => ScreenTiga(),
-      },
+//      initialRoute: '/',
+//      routes: {
+//        '/': (context) => ScreenSatu(),
+//        '/dua': (context) => ScreenDua(),
+//        '/tiga': (context) => ScreenTiga(),
+//      },
     );
   }
 }

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutterapp/screen/screenOne.dart';
+//import 'package:flutterapp/screen/screenOne.dart';
 
 class ScreenTiga extends StatelessWidget {
   @override
