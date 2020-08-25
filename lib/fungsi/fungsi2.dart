@@ -1,20 +1,23 @@
 import 'package:flutter/material.dart';
 import 'package:geolocator/geolocator.dart';
 
-class LokasiSekarang extends StatefulWidget {
+class Fungsi2 extends StatefulWidget {
   @override
-  _LokasiSekarangState createState() => _LokasiSekarangState();
+  _Fungsi2State createState() => _Fungsi2State();
 }
 
-class _LokasiSekarangState extends State<LokasiSekarang> {
-
+class _Fungsi2State extends State<Fungsi2> {
   String _pesanLokasi = "";
+  double posLat = 0;
+  double posLon = 0;
 
   void _lokasiSekarang () async{
     var posisi = await Geolocator().getCurrentPosition(desiredAccuracy: LocationAccuracy.high);
-    print(posisi);
+//    print(posisi);
     setState(() {
       _pesanLokasi = '${posisi.latitude}, ${posisi.longitude}';
+      posLat = posisi.latitude;
+      posLon = posisi.longitude;
     });
   }
 
@@ -23,7 +26,6 @@ class _LokasiSekarangState extends State<LokasiSekarang> {
       _pesanLokasi = "";
     });
   }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -41,10 +43,10 @@ class _LokasiSekarangState extends State<LokasiSekarang> {
               },
             ),
             RaisedButton(
-              child: Text('Bersihkan lokasi'),
-              onPressed: () {
-                _bersihkanLayar();
-              }
+                child: Text('Bersihkan lokasi'),
+                onPressed: () {
+                  _bersihkanLayar();
+                }
             ),
           ],
         ),
@@ -52,3 +54,5 @@ class _LokasiSekarangState extends State<LokasiSekarang> {
     );
   }
 }
+
+

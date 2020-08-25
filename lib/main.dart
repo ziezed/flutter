@@ -1,8 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:flutterapp/asingawait/asing1.dart';
+import 'package:flutterapp/fungsi/fungsi1.dart';
+import 'package:flutterapp/fungsi/fungsi2.dart';
+import 'package:flutterapp/responsive/ekspand.dart';
+import 'package:flutterapp/rowcolumn/baris.dart';
+import 'package:flutterapp/rowcolumn/kolom.dart';
+import 'package:flutterapp/urusanMap/lokasiInit.dart';
 //import 'package:flutterapp/screen/screenOne.dart';
 //import 'package:flutterapp/screen/screenTree.dart';
 //import 'package:flutterapp/screen/screenTwo.dart';
 import 'package:flutterapp/urusanMap/lokasiSekarang.dart';
+import 'package:flutterapp/urusanMap/tempat.dart';
 //import 'package:flutterapp/lessFull/statfull.dart';
 //import 'package:flutterapp/lessFull/wijet.dart';
 //import 'package:flutterapp/list/listStateLess.dart';
@@ -24,9 +32,9 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Aplikasi untuk testing',
       theme: ThemeData(
-        primarySwatch: Colors.deepOrange,
+        primarySwatch: Colors.orange,
       ),
-      home: LokasiSekarang(),
+      home: Tempat(),
         //ini bagian route
 //      initialRoute: '/',
 //      routes: {
